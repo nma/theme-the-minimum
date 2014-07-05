@@ -32,20 +32,39 @@ a {
 	}
 }
 
-/* HIGHLIGHTER */
-pre { margin-bottom: @line-height / @em; }
+/* highlighter */
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
 pre {
-	color: #f2f2f2;
-	background-color: @base02;
-	border: 1px solid fadein(@base02, 30%); 
-	font-family: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
-	margin-left: 0;
-	margin-right: 0;
-	padding: @line-height / @em;
-	overflow: auto;
-	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
-	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.6);
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
 }
 
 /* meta */
@@ -316,5 +335,5 @@ pre {
 }
 
 @import "_layout.less";
-@import "syntaxhighlighter.css";
 @import "helper.css";
+@import "syntaxhighlighter.css";
