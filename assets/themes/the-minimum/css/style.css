@@ -316,11 +316,6 @@ pre code {
   margin-left: 0;
   margin-right: 0;
 }
-.unit-article ul,
-.unit-article ol,
-.unit-article dl {
-  padding-left: 0;
-}
 .unit-article ul {
   list-style: square;
 }
@@ -381,6 +376,7 @@ pre code {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 .unit-article img.left {
   margin-right: 16px;
