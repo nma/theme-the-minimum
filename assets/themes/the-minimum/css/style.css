@@ -1,7 +1,5 @@
 @import "base.css";
 @import "module.css";
-@import "helper.css";
-@import "syntaxhighlighter.css";
 /*
 Frameless			<http://framelessgrid.com/>
 by Joni Korpi 		<http://jonikorpi.com/>
@@ -20,6 +18,8 @@ Calculation should be done via  http://j.mp/rNg5uA
 
 No styleguide reference.
 */
+@import "helper.css";
+@import "syntaxhighlighter.css";
 body {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
   font-size: 1em;
@@ -167,7 +167,6 @@ No styleguide reference.
   zoom: 1;
   line-height: normal;
   letter-spacing: normal;
-  margin-right: 16px;
   word-spacing: normal;
   vertical-align: middle;
 }
@@ -778,7 +777,7 @@ pre code {
 */
 @media only screen and (min-width: 1280px) {
   .the-header .unit-inner {
-    width: 60em;
+    width: 54.375em;
   }
   .the-header .logo {
     width: 26.25em;
@@ -798,7 +797,7 @@ pre code {
   }
   .unit-article .unit-foot .pagination {
     float: left;
-    width: 37.5em;
+    width: 31.875em;
   }
   .unit-article .unit-foot .gotop {
     float: right;
@@ -816,7 +815,7 @@ pre code {
     width: 20.625em;
   }
   .the-footer .unit-foot {
-    width: 60em;
+    width: 54.375em;
   }
 }
 /*
@@ -824,13 +823,13 @@ pre code {
 */
 @media only screen and (min-width: 1410px) {
   .the-header .unit-inner {
-    width: 88.125em;
+    width: 54.375em;
   }
   .the-header .logo {
-    width: 43.125em;
+    width: 26.25em;
   }
   .the-header .nav-global {
-    width: 43.125em;
+    width: 26.25em;
   }
   .unit-article .unit-head-inner,
   .unit-article .entry-content,
@@ -838,13 +837,12 @@ pre code {
     width: 54.375em;
   }
   .unit-article .unit-foot-inner {
-    width: 88.125em;
+    width: 54.375em;
   }
   .unit-article .unit-foot .pagination {
     width: 54.375em;
   }
   .unit-article .unit-foot .gotop {
-    padding-right: 360px;
     width: 9.375em;
   }
   .layout-page .unit-body .unit-body-inner {
@@ -857,19 +855,12 @@ pre code {
     width: 20.625em;
   }
   .the-footer .unit-foot {
-    width: 88.125em;
+    width: 54.375em;
   }
-  .the-footer .unit-inner h1,
-  .the-footer .unit-inner h2,
-  .the-footer .unit-inner h3,
-  .the-footer .unit-inner h4,
-  .the-footer .unit-inner h5,
-  .the-footer .unit-inner p,
-  .the-footer .unit-inner ul,
-  .the-footer .unit-inner ol,
-  .the-footer .unit-inner dl,
-  .the-footer .unit-inner blockquote {
-    margin-left: 360px;
-    margin-right: 360px;
+  .the-footer .unit-inner {
+    /*h1, h2, h3, h4, h5, p, ul, ol, dl, blockquote {
+				margin-left: 360px;
+				margin-right: 360px;
+			}*/
   }
 }
